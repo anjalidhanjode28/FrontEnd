@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <style>
+        footer{
+            background-color: black;
+            color: white;
+        }
+        #container{
+            width: 80%;
+            padding-top: 2% ;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,auto);
+            gap: 10px;
+            padding-bottom: 2%;
+        }
+        
+        #container > div > img{
+            width: 10%;
+            margin: auto 5% auto auto;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        #container > div > img:hover{
+            width: 8%;
+            background-color: rgb(39, 37, 37);
+        }
+
+        #container > div:last-child > div {
+            background-color: rgb(72, 71, 71);
+            border: 1px solid rgb(247, 252, 247);
+            display: flex;
+            justify-content: end;
+            border-radius: 8px;
+        }
+        #container > div:last-child > div >div{
+            border: 5px solid rgb(251, 157, 4);
+            border-radius: 8px;
+            background-color: rgb(253, 157, 3);
+            color: white;
+        }
+
+        #container > div:last-child > div >div:hover{
+            border: 5px solid rgb(186, 218, 3);
+            border-radius: 8px;
+            background-color: rgb(186, 218, 3);
+            color: rgb(252, 7, 7);
+        }
+        
+        #last{
+            width: 80%;
+            margin: auto;
+            /* border: 1px solid rgb(41, 19, 231); */
+            text-align: center;
+            padding-bottom: 2%;
+        }
+        b{
+            color: rgb(2, 202, 202);
+        }
+        a{
+           color: white;
+           text-decoration: none;
+        }
+        a:hover{
+            color: rgb(244, 200, 5);
+           text-decoration: underline;
+        }
+        #container > div > p{
+            font-size: 80%;
+        }
+        #container > div > p:first-child{
+            font-size: 150%;
+            /* font-style: italic; */
+        }
+        hr{
+            border: 1px solid white;
+        }
+      
+
+        @media all and (min-width: 481px) and (max-width: 768px){
+            #container{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,auto);
+            }
+        }
+
+        @media all and (min-width: 320px) and (max-width: 480px){
+            #container{
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(4,auto);
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        
+        <div id="container">
+            <div>
+                <p>RESTAURANTLY</p>
+                <div>
+                    <h5>A108 Adam Street</h5>
+                    <h5>NY 535022, BANGLORE</h5>
+                </div>
+                
+                <h4><b>Phone:</b>+55895548855</h4>
+                <h4><b>Email:</b>info@example.com</h4>
+            
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzR04XT4mrm5PZ1fy17qUv_zI_4UucaiNvUQ&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAP2LxNRdF04uBOHUhBtLLqkm_SkHuNmokig&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY9r7OpsEq8EscDhMzKjx_EQb6LSMHYvQig&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_YbaMZ8Q_EORHiQYOThS_bgO8Vv_zb36qQ&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSawDurqvAWahUdN811zhbGJ6kY-jP_Y6omqA&usqp=CAU" alt="">
+               
+            </div>
+            <div>
+                <h2>Useful Links</h2>
+                <p><a href="#"> <b>></b> Home</a></p>
+                <p><a href="#"> <b>></b> About us</a></p>
+                <p><a href="#"> <b>></b> Services</a></p>
+                <p><a href="#"> <b>></b> Terms of service</a></p>
+                <p><a href="#"> <b>></b> Privacy policy</a></p>
+            </div>
+            <div>
+                <h2>Our Services</h2>
+                <p><a href="#"> <b>></b> web Design</a></p>
+                <p><a href="#"> <b>></b> Web Development</a></p>
+                <p><a href="#"> <b>></b> Product Management</a></p>
+                <p><a href="#"> <b>></b> Marketing</a></p>
+                <p><a href="#"> <b>></b> Graphic Design</a></p>
+            </div>
+            <div>
+                <h2>Our Newsletter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit odio blanditiis laboriosam, fuga expedita quisquam!</p>
+                <div>
+                    <div><strong>Subscribe</strong></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="last">
+            <h4>@Copyright RESTAURANTLY. All Rights Reserved</h4>
+            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ratione inventore sint, adipisci repudiandae at ipsum enim minima cumque molestiae..</h5>
+        </div>
+    </footer>
+</body>
+</html>
