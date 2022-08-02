@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOVIE APP-II</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <style>
+    #box{
+      width: 90%;
+      margin: auto;
+    }
+    #navbar{
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(247, 145, 230);
+      margin-bottom: 2%;
+    }
+
+    #sort-hl,
+    #sort-lh{
+        margin-bottom: 1.5%;
+        padding: 1% 1.5% 1% 1%;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+    #container {
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 2% 1%;
+    }
+
+    #container>div {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin: auto;
+    }
+
+    #container>div>div {
+      width: 90%;
+      margin: auto;
+      padding-bottom: 2%;
+    }
+
+    #container>div>img {
+      width: 100%;
+    }
+
+    h2,
+    h5 {
+      padding-top: 0%;
+      padding-bottom: 0%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+
+    .checked {
+      color: rgb(250, 176, 5);
+    }
+
+    @media all and (min-width: 481px) and (max-width: 768px) {
+      #container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+      }
+    }
+
+    @media all and (min-width: 320px) and (max-width: 480px) {
+      #container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, auto);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div id="navbar">
+      <h1>Movie Page -II</h1>
+    </div>
+    <button id="sort-hl">Sort by high rating to low</button>
+    <button id="sort-lh">Sort by low rating to high</button>
+
+    <div id="container"></div>
+  </div>
+
+</body>
+
+</html>
+
+<script>
+  var movieData = [
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/2886/892886-h",
+      name: "Tanhaji ",
+      release_date: "10 January 2020",
+      IMDb_rating: 7.5,
+    },
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/8284/388284-h",
+      name: "Total Dhamaal",
+      release_date: "22 February 2019",
+      IMDb_rating: 4.2,
+    },
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/old_images/MOVIE/2789/1000212789/1000212789-h",
+      name: "Raid ",
+      release_date: "16 March 2018",
+      IMDb_rating: 7.4,
+    },
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/old_images/MOVIE/5483/1770015483/1770015483-h",
+      name: "Kaabil",
+      release_date: "25 January2017",
+      IMDb_rating: 7.1,
+    },
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/old_images/MOVIE/4189/1000074189/1000074189-h",
+      name: "Drishyam",
+      release_date: "19 December 2013",
+      IMDb_rating: 10,
+    },
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/old_images/MOVIE/4506/1000034506/1000034506-h",
+      name: "Singham Returns",
+      release_date: "15 August 2015",
+      IMDb_rating: 5.7,
+    },
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/1527/571527-h",
+      name: "Mission Mangal",
+      release_date: "13 August 2019",
+      IMDb_rating: 6.5,
+    },
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/1331/641331-h",
+      name: "Chhichhore",
+      release_date: "6 September 2019",
+      IMDb_rating: 8,
+    },
+    {
+      poster_url:
+        "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/old_images/MOVIE/4503/1000034503/1000034503-h",
+      name: "Bang Bang ",
+      release_date: "2 October 2014",
+      IMDb_rating: 5.5,
+    },
+
+  ];
+
+
+  displayContainer(movieData);
+
+
+document.getElementById("sort-hl").addEventListener("click",filterHighToLow);
+
+  function filterHighToLow() {
+   
+      movieData.sort(function (a, b) {
+
+        let x = a.IMDb_rating;
+        let y = b.IMDb_rating;
+        if (x > y) return -1;
+        if (x < y) return 1;
+        return 0;
+      });
+
+      displayContainer(movieData);
+      console.log(movieData);
+    }
+
+
+document.getElementById("sort-lh").addEventListener("click",filterLowToHigh);
+
+    function filterLowToHigh() {
+
+      movieData.sort(function (a, b) {
+
+        let x = a.IMDb_rating;
+        let y = b.IMDb_rating;
+        if (x > y) return 1;
+        if (x < y) return -1;
+        return 0;
+      });
+
+      displayContainer(movieData);
+      console.log(movieData);
+    }
+
+    function displayContainer(mensData) {
+
+document.querySelector("#container").innerHTML="";
+
+  movieData.forEach(function (elem) {
+    let div = document.createElement("div");
+    let div2 = document.createElement("div");
+
+    let poster = document.createElement("img");
+    poster.setAttribute("src", elem.poster_url);
+
+    let name = document.createElement("h2");
+    name.innerText = elem.name;
+
+    let release_date = document.createElement("h5");
+    release_date.innerText = "Release date:" + "  " + elem.release_date;
+
+    let IMDb_rating = document.createElement("h5");
+
+    IMDb_rating.innerText = "IMDb Rating:" + " " + elem.IMDb_rating + " ";
+    let span1 = document.createElement("span");
+    let span2 = document.createElement("span");
+    let span3 = document.createElement("span");
+    let span4 = document.createElement("span");
+    let span5 = document.createElement("span");
+
+    span1.setAttribute("class", "fa fa-star checked");
+    span2.setAttribute("class", "fa fa-star checked");
+    span3.setAttribute("class", "fa fa-star checked");
+    span4.setAttribute("class", "fa fa-star checked");
+    span5.setAttribute("class", "fa fa-star checked");
+    IMDb_rating.append(span1, span2, span3, span4, span5);
+    div2.append(name, release_date, IMDb_rating)
+    div.append(poster, div2);
+    console.log(div);
+    document.querySelector("#container").append(div);
+
+  });
+}
+</script>
