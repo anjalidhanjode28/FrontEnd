@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <img id="img" src="" alt="">
+</body>
+</html>
+
+<script>
+//promise
+//start of 10th standard - promise made
+//promise is in process
+//finally, promise ends
+
+//1. promise is fullfilled ( sweets )
+//2. promise is failed ( chappal )
+//3. promise is pending
+
+//when you make a promise, it takes time.
+//promise will return a value after some time.
+//waiting while promise is in process
+//promise should not have blocking behaviour
+//network request
+//instagram
+//scrolling insta feed - start loading
+//uploading......
+//uploaded.
+//failed.
+//network requests
+//setTimeout to mimick a delay
+//promise
+// user visits website
+//we are getting data, wait, show loading img
+//after 4 seconds, data is there, replace the img with success image
+
+let img = document.getElementById('img');
+//mimicking getting the data
+function getData() {
+  //nature of data?
+  return true;
+}
+
+// arr.map(function (element, index) {
+// })
+
+let myPromise = new Promise(function (resolve, reject) {
+  let data = false; //initally we dont have data
+  //we are waiting for data
+  setTimeout(function () {
+    data = getData();
+
+    if (data) {
+      resolve('sweets'); //success value
+    } else {
+      reject('chappal'); //reject value
+    }
+  }, 3000);
+});
+
+
+//if you want to handle success value
+
+// myPromise.then(function (res) {
+//   console.log('res:', res);
+
+//   img.src = 'https://media0.giphy.com/media/Q81NcsY6YxK7jxnr4v/200w.webp?cid=ecf05e47du9rfrb5n1wqylpwka83yq4zksqob66dao6h9zsx&rid=200w.webp&ct=g';
+// });
+
+// //if you want to handle reject/error value
+
+// myPromise.catch(function (err) {
+//   console.log('err:', err);
+// });
+
+// myPromise.finally(function () {
+//   console.log('ran');
+// });
+
+//1st param to promise - callback function
+
+//resolve - success
+//reject - failure
+
+//phonepe UI screen
+
+//create a basic UI
+//you enter a password
+
+//bank verifies your password, balence.
+</script>

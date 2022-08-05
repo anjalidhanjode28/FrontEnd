@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App I</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .mapouter {
+      position: relative;
+      text-align: right;
+      height: 350px;
+      width: 100%;
+    }
+
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 350px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="all">
+    <div id="nav">
+      <input oninput="borderNone()" type="text" id="city" placeholder="Enter city" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+    <div id="box">
+      <div id="container"></div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="100%" height="350px" id="gmap_canvas" src=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script src="index.js"></script>
