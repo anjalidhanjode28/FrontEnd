@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, auto);
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+
+        #container>div {
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+
+        .product {
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .product>img {
+            width: 100%;
+        }
+        #counter{
+            border: 1px solid black;
+            margin: 3%;
+            width: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h2><a href="index.html">Form Page</a></h2>
+        </div>
+        <div id="counter">
+
+        </div>
+        <div id="container">
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    let product = JSON.parse(localStorage.getItem("Productdata")) || [];
+    let sum = product.length;
+
+    document.getElementById("counter").innerText = "Total Item:-" + " " + sum;
+
+    displayContainer(product);
+
+    function displayContainer(product) {
+
+        document.querySelector("#container").innerHTML = "";
+
+        product.forEach(function (elem, index) {
+
+            let div = document.createElement("div");
+            div.setAttribute("class", "product");
+
+            let img = document.createElement("img");
+            img.setAttribute("src", elem.image);
+
+
+            let name = document.createElement("p");
+            name.innerText = elem.name;
+
+            let category = document.createElement("h3");
+            category.innerText = elem.category;
+
+            let price = document.createElement("h3");
+            price.innerText = elem.price;
+
+
+            let gender = document.createElement("h3");
+            gender.innerText = elem.gender;
+
+            let remove = document.createElement("button");
+            remove.innerText = "Remove";
+            remove.setAttribute("id", "remove");
+            remove.addEventListener("click", function () {
+                removeItemFunc(index);
+            });
+
+
+            let sold = document.createElement("button");
+            sold.innerText = elem.sold;
+            sold.setAttribute("id", "sold");
+            sold.addEventListener("click", function () {
+                changeColor(elem);
+            })
+
+            if (elem.sold == "false") {
+                sold.style.backgroundColor = "green";
+            }
+            else {
+                sold.style.backgroundColor = "red";
+            }
+
+
+
+            div.append(img, name, category, price, gender, remove, sold);
+            document.querySelector("#container").append(div);
+            console.log(product);
+        });
+
+
+        function removeItemFunc(index) {
+            product.splice(index, 1);
+            localStorage.setItem("Productdata", JSON.stringify(product));
+        }
+
+
+        function changeColor(elem, index) {
+
+            if (elem.sold == "false") {
+                elem.sold = "true";
+            }
+            else {
+                elem.sold = "false";
+            }
+            displayContainer(product);
+        }
+    }
+
+</script>

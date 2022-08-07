@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin panel</title>
+</head>
+<body>
+    <!-- onsubmit="admin_product(event)" -->
+    <form id="productForm" onsubmit="admin_product(event)">
+        <h3>Product name</h3>
+        <input id="name" type="text" placeholder="name">
+        <h3>Category</h3>
+        <input id="category" type="text" placeholder="category">
+        <h3>Image url</h3>
+        <input id="image" type="url" placeholder="image url">
+        <h3>Price</h3>
+        <input id="price" type="number" placeholder="enter price">
+        <h3>Gender</h3>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <h3>Sold <span id="sold"></span> </h3>
+        <input type="submit" id="add" value="submit">
+    </form>
+
+</body>
+</html>
+
+<script>
+
+    function admin_productCF(n,c,i,p,g,s){
+        this.name = n
+        this.category =c
+        this.image = i
+        this.price = p
+        this.gender =g
+        this.sold =s
+    }
+  //document.querySelector("form").addEventListener("submit", admin_product);
+
+    let array=[];
+
+    function admin_product(){
+        event.preventDefault();
+        let form = document.getElementById("productForm");
+        let name = document.getElementById("name").value;
+        let category = document.getElementById("category").value;
+        let image = document.getElementById("image").value;
+        let price = document.getElementById("price").value;
+        let gender = document.getElementById("gender").value;
+        let sold = document.getElementById("sold").innerText="false";
+
+        let products = new admin_productCF(name,category,image,price,gender,sold);
+
+        array.push(products);
+        console.log("arr:", array);
+        
+    }
+    localStorage.setItem("Products", JSON.stringify(array));
+</script>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAR AKBAR ANTHONY</title>
+</head>
+<body>
+    <h1>AMAR AKBAR ANTHONY</h1>
+</body>
+</html>
+<script>
+    const goa = {
+    name: "Amar",
+    skill: "singer",
+    borrowSkill_1(name,share_1){
+        console.log(`${name} is a good ${this.skill} in ${share_1}`);
+    }
+};
+
+const mumbai = {
+    name: "Akbar",
+    skill: "chef",
+    borrowSkill_2(name,share_2){
+        console.log(`${name} is a good ${this.skill} in ${share_2}`);
+
+    }
+};
+
+const kashmir = {
+    name: "Anthony",
+    skill: "Mugician",
+    borrowSkill_3(name,share_3){
+        console.log(`${name} is a good ${this.skill} in ${share_3}`);
+
+    }
+};
+
+
+goa.borrowSkill_1.call(goa,"Amar","Goa");
+goa.borrowSkill_1.call(kashmir,"Amar","Goa");
+goa.borrowSkill_1.call(mumbai,"Amar","Goa");
+
+
+mumbai.borrowSkill_2.call(goa,"Akbar","Mumbai");
+mumbai.borrowSkill_2.call(kashmir,"Akbar","Mumbai");
+mumbai.borrowSkill_2.call(mumbai,"Akbar","Mumbai");
+
+
+kashmir.borrowSkill_3.call(goa,"Anthony","Kashmir");
+kashmir.borrowSkill_3.call(kashmir,"Anthony","Kashmir");
+kashmir.borrowSkill_3.call(mumbai,"Anthony","Kashmir");
+
+</script>
