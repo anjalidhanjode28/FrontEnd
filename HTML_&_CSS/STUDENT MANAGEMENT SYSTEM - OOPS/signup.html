@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp_Page</title>
+</head>
+<body>
+    <h1>Student Management System</h1>
+    <h2>Sign Up</h2>
+
+    <form>
+        <input id="userName" type="text" placeholder="Enter username....">
+        <input id="email" type="email" placeholder="Email....">
+        <input id="pass" type="password" placeholder="Password...">
+        <select id="select">
+            <option value="admin">Admin</option>
+            <option value="student">Student</option>
+        </select>
+        <input id="submt" onclick="signUp(event)" type="button" value="Submit">
+    </form>
+</body>
+</html>
+<script src="./scripts/signup.js"></script>
