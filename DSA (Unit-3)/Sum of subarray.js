@@ -58,7 +58,6 @@ function runProgram(input){
         sumOfSubarrays(size,value,arr);
     }
     
-    
 }
 
 if(process.env.USER===""){
