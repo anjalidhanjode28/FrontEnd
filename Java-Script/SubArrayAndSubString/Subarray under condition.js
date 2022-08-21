@@ -8,10 +8,10 @@ for(let son=father; son<arr.length; son++){
     for(let me=father; me<=son; me++){
         array.push(arr[me]);
     }
-     let result = sum(array);
-    if(result==true){
-    console.log(father,son);
-    }
+        let result = sum(array);
+        if(result==true){
+            console.log(father,son);
+        }
     
 }
 
