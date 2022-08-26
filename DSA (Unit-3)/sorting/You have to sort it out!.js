@@ -18,7 +18,6 @@ let i;
         index.push(k);
     }
     
-    
     for (i=0; i<N-1; i++)
     {
         for (j=0; j<N-i-1; j++)
