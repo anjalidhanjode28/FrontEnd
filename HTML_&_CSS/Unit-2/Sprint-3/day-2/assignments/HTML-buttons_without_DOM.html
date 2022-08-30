@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /* border: 1px solid black; */
+            display: grid;
+            margin: 5% auto auto auto;
+            width: 75%;
+            grid-template-columns: repeat(9, 1fr);
+            grid-template-rows: repeat(1, auto);
+            gap: 10px;
+        }
+        button{
+            margin: auto;
+            border: none;
+            border-radius: 2px;
+            font-size: 17px;
+        }
+        div> button:nth-child(1){
+            background-color: blue;
+            color: rgb(252, 247, 247);
+        }
+        div > button:nth-child(2){
+            background-color: grey;
+            color: white;
+            size: 20%;
+        }
+        div > button:nth-child(3){
+            background-color: green;
+            color: white;
+        }
+        div > button:nth-child(4){
+            background-color: red;
+            color: white;
+        }
+        div > button:nth-child(5){
+            background-color: rgb(209, 134, 5);
+        }
+        div > button:nth-child(6){
+            background-color: rgb(48, 130, 238);
+            color: white;
+        }
+        div > button:nth-child(7){
+            background-color: white;
+        }
+        div > button:nth-child(8){
+            background-color: black;
+            color: white;
+        }
+        div > button:nth-child(9){
+            background-color: white;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <button>Primary</button>
+        <button>Secondary</button>
+        <button>Success</button>
+        <button>Danger</button>
+        <button>Warning</button>
+        <button>Info</button>
+        <button>Light</button>
+        <button>Dark</button>
+        <button>Link</button>
+    </div>
+
+</body>
+
+</html>

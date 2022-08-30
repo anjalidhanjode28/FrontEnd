@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admitted</title>
+    <link rel="stylesheet" href="commonStyles.css" />
+  </head>
+
+  <body>
+    <div id="links">
+      <div><a href="index.html">Home</a></div>
+      <div><a href="applied.html">Applied Jobs</a></div>
+      <div><a href="bookmark.html">Bookmarks</a></div>
+    </div>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Job Applied</th>
+            <th>Delete Bookmark</th>
+          </tr>
+        </thead>
+        <tbody id="body"></tbody>
+      </table>
+    </main>
+  </body>
+  <script>
+    //you need to code here
+    let content = JSON.parse(localStorage.getItem("bookmarks")) || [];
+    //console.log(content);
+
+    content.forEach(function(elem,index){
+      let tableRow = document.createElement("tr");
+
+      let column1 = document.createElement("td");
+      column1.innerText = elem.name;
+
+      let column2 = document.createElement("td");
+      column2.innerText = elem.email;
+
+      let column3 = document.createElement("td");
+      column3.innerText = elem.role;
+
+      let column4 = document.createElement("td");
+      column4.innerText = "Delete";
+      column4.style.color="red";
+      column4.addEventListener("click",function(){
+        deleteBookmark(index);
+      })
+      
+      tableRow.append(column1,column2,column3,column4);
+      document.querySelector("tbody").append(tableRow);
+      
+    });
+
+    function deleteBookmark(index){
+      content.splice(index,1);
+      console.log(content);
+      localStorage.setItem("bookmarks",JSON.stringify(content));
+    }
+  </script>
+</html>

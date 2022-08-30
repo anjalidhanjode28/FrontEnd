@@ -1,0 +1,30 @@
+/* Write necessery css for navbar here  */
+
+
+body{
+    text-align: center;
+}
+#navbar{
+    
+    width: 85%;
+    height: auto;
+    margin: 3% auto 3% auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* border: 1px solid black; */
+}
+
+#navbar > div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 140%;
+}

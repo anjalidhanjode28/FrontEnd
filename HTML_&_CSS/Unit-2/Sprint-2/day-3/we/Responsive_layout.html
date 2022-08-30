@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQ LAYOUT-1</title>
+    <style>
+        h1{
+            /* border: 1px solid black; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            width: 40%;
+            margin: 5%  auto auto auto;
+            text-align: center;
+        }
+
+        h1+p{
+            /* border: 1px solid black; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 50%;
+            margin: 0% auto;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+         #container{
+            /* border: 1px solid black; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        #container > div{
+            /* border: 1px solid black; */
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        #container > div > h1+p {
+            /* border: 1px solid black; */
+            font-style: italic;
+        }
+        #container > div:nth-child(1)>h1{
+            color: green;
+        }
+
+        #container > div:nth-child(2)>h1{
+            color: orange;
+        }
+
+        #container > div:nth-child(3)>h1{
+            color: rgb(3, 103, 203);
+        }
+
+        button{
+            color: blue;
+            border: 1px solid blue;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        button:hover{
+            background-color: blue;
+            color: white;
+            border: 0;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        
+        @media all and (min-width: 480px) and (max-width: 768px){
+            #container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            h1{
+                width: 60%;
+            }
+            h1+p{
+                width: 80%;
+            }
+        }
+
+
+        @media all and (min-width: 320px) and (max-width: 480px){
+            #container{
+                grid-template-columns: repeat(1, 1fr);
+                width: 95%;
+            }
+            h1,
+            h1+p{
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Choose a plane that right for your business</h1>
+    <p>
+        we collect reviews from our users so you can get an honest opinion of what an experience with our websites are really like!
+    </p>
+
+    <div id="container">
+        <div>
+            <h2>Start Plan</h2>
+            <h1>Free</h1>
+            <p>Per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our websites</p>
+            <button>Start Now</button>
+        </div>
+
+        <div>
+            <h2>Business Plan</h2>
+            <h1>$39.00</h1>
+            <p>Per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our websites</p>
+            <button>Start Now</button>
+        </div>
+
+        <div>
+            <h2>Preminum Plan</h2>
+            <h1>$59.00</h1>
+            <p>Per month</p>
+            <p>we collect reviews from our users so you can get an honest opinion of what an experience with our websites</p>
+            <button>Start Now</button>
+        </div>
+    
+    </div>
+</body>
+</html>

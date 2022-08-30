@@ -1,0 +1,55 @@
+/* Write css related to the Home page here  */
+body{
+    text-align: center;
+}
+#navbar{
+    
+    width: 85%;
+    height: auto;
+    margin: 3% auto 3% auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* border: 1px solid black; */
+}
+
+#navbar > div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+#create{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+form{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3% 1.5% 2% 1.5%;
+    width: 25%;
+    display: flex;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 3%;
+    text-align: left;
+    flex-direction: column;
+}
+
+input{
+    padding: 2% 10% 2% 3%;
+    margin-bottom: 3%;
+}
+
+select{
+    padding: 2% 10% 2% 3%;
+    margin-bottom: 3%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size: 140%;
+}

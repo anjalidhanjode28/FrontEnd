@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Students</title>
+    <style>
+        
+        .navbar{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            width: 85%;
+            height: auto;
+            margin: 3% auto 5% auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        h1{
+            font-size: 140%;
+        }
+
+        select{
+          margin: 0% auto 2% 8%;
+          /* padding: 1% 1% 1% 3%; */
+          font-size: 15px;
+          border: 2px solid black;
+        }
+        table{
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+          /* border: 1px solid red; */
+          width: 85%;
+          margin: auto;
+          text-align: center;
+        }
+        thead{
+          background-color: rgb(2, 62, 62);
+          color: white;
+          font-size: 20px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        tr{
+          font-size: 20px;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html"><h1>Add Students</h1></a>
+      <a href="./students.html"><h1>Students Database</h1></a>
+      <a href="./admitted.html"><h1>Admitted</h1></a>
+      <a href="./rejected.html"><h1>Rejected</h1></a>
+    </div>
+    <select id="filter">
+      <option value="">Filter By Course</option>
+      <option value="all">All</option>
+      <option value="Web-Development">Web-Development</option>
+      <option value="Android-Development">Android-Development</option>
+      <option value="Data-Analitics">Data-Analitics</option>
+    </select>
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Course</th>
+          <th>Gender</th>
+          <th>Phone</th>
+          <th>Admitted</th>
+          <th>Rejected</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table Rows should be appended Here  -->
+      </tbody>
+    </table>
+  </body>
+  <script src="./students.js"></script>
+</html>

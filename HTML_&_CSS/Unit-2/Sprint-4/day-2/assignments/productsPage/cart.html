@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        #container {
+            width: 97%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(9, auto);
+            gap: 2% 2%;
+            padding-left: 5%;
+        }
+
+        body{
+            text-align: center;
+        }
+
+        body > h1{
+            width: 20%;
+            /* background-color: rgb(254, 143, 74); */
+            margin: 1% auto 5% auto;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+        }
+        #item{
+            width: 80%;
+            margin: auto ;
+            display: flex;
+        }
+        #item > div {
+            margin: 1% 1% 1% 1%;
+        }
+
+        p {
+            font-size: 80%;
+        }
+
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            #container {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(12, auto);
+            }
+        }
+
+        @media all and (min-width: 320px) and (max-width: 480px) {
+            #container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(18, auto);
+            }
+        }
+
+         /* home page */
+
+         #box > #box1{
+            background-color: #427596;
+            margin: auto;
+            width: 95%;
+            /* border: 1px solid red; */
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #box1 > div{
+            padding: 1%;
+            display: flex;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            height: 20px;
+            width: auto;
+            justify-content: space-between;
+        }
+        #box > #box1 > div:last-child{
+            width: 35%;
+        }
+        #box > #box1 > div > div{
+            color: white;
+            font-size: small;
+            /* border: 1px solid green; */
+            height: auto;
+        }
+         a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+        <div id="box1">
+            <div>
+                <div>
+                    Rebook
+                </div>
+            </div>
+            <div>
+                <div><a href="menspage.html">Men</a></div>
+                <div><a href="womenspage.html">Women</a></div>
+                <div><a href="cart.html">Cart</a></div>
+                <!-- <div><a href="signUpPage.html">Sign Up</a></div> -->
+            </div>
+        </div>
+    </div>
+
+    <h1>Cart Page</h1>
+    <div id="item">
+
+        <div>
+            <h3>Total Item:- <span id="totalItem"></span></h3>
+        </div>
+        <div><h3>Total Price:- <span id="totalprice"></span></h3></div>
+        <div>
+            <h3><button>Discount</button> <input id="discount" type="text" value=""><span id="discounts"></span></h3>
+        </div>
+        
+    </div>
+    <div id="container"></div>
+</body>
+
+</html>
+
+<script>
+
+    let addtoCartData = JSON.parse(localStorage.getItem("addToCart")) || [];
+
+    var sum=0;
+
+    console.log(addtoCartData.length);
+    let total_item = addtoCartData.length;
+    document.getElementById("totalItem").innerText=total_item;
+    
+
+    displayContainer(addtoCartData);
+
+    function displayContainer(addtoCartData){
+        
+        document.querySelector("#container").innerHTML="";
+
+
+        addtoCartData.forEach(function (elem, index) {
+            let div = document.createElement("div");
+
+            let img = document.createElement("img");
+            img.setAttribute("src", elem.image_url);
+
+            let name = document.createElement("p");
+            name.innerText = elem.name;
+
+            let price = document.createElement("h5");
+            price.innerText = elem.price;
+            sum=sum+Number(elem.price);
+
+            let strikedoffprice = document.createElement("h5");
+            strikedoffprice.innerText = elem.strikedoffprice;
+
+            let removetoCart = document.createElement("button");
+            removetoCart.innerText = "Remove";
+
+            removetoCart.addEventListener("click", function () {
+                removetoCartFunc(index);
+            })
+
+            div.append(img, name, price, strikedoffprice, removetoCart);
+            document.querySelector("#container").append(div);
+        });
+
+        function removetoCartFunc(index)
+        {
+            addtoCartData.splice(index, 1);
+            localStorage.setItem("addToCart", JSON.stringify(addtoCartData));
+        }
+    }
+
+    document.getElementById("totalprice").innerText=sum;
+    //console.log(sum);
+
+    document.querySelector("button").addEventListener("click",checkDiscount);
+
+    function checkDiscount()
+    {
+        let sum2=sum*0.3;
+
+        if(document.getElementById("discount").value === "masai30")
+        {
+            document.getElementById("discounts").innerText="Your final amount will be:-" + (sum-sum2);
+            console.log(sum2);
+        }
+        else
+        {
+            alert("wrong fill-up");
+        }
+    }
+       
+        
+</script>

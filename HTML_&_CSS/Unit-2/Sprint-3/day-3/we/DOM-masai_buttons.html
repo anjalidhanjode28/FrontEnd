@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>MASAI BUTTONS USING JS DOM</title>
+    <style>
+        div{
+            margin: 5% auto auto auto;
+            width: 85%;
+        }
+        button{
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    var btnArr = [
+    { name: "Primary", color: "white", bgColor: "blue" },
+    { name: "Secondary", color: "white", bgColor: "grey" },
+    { name: "Danger", color: "white", bgColor: "red" },
+    { name: "Warning", color: "black", bgColor: "yellow" },
+    { name: "Info", color: "white", bgColor: "cyan" },
+    { name: "Light", color: "black", bgColor: "white" },
+    { name: "Success", color: "white", bgColor: "green" },
+    { name: "Dark", color: "white", bgColor: "black" },
+    { name: "Link", color: "blue", bgColor: "white" },
+    { name: "Dark Pink", color: "blue", bgColor: "pink" },
+  ];
+
+  let box = document.createElement("div");
+
+  btnArr.forEach(function(elem) {
+    let btn = document.createElement("button");
+    btn.innerText = elem.name;
+    btn.style.backgroundColor = elem.bgColor;
+    btn.style.color = elem.color;
+    box.append(btn);
+    document.querySelector("body").append(box);
+  });
+
+</script>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Calculator</title>
+    <style>
+        
+        #div{
+            margin: 5% auto auto auto;
+            width: 50%;
+            text-align: center;
+        }
+        #divv{
+            margin: 2% auto auto auto;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <input id="num1" type="number" placeholder="enter 1st Number">
+        <input id="num2" type="number" placeholder="enter 2st Number">
+    </div>
+    
+    <div id="divv">
+        <button onClick="add()">Add</button>
+        <button onClick="subtract()">Subtract</button>
+        <button onClick="multiply()">Multiply</button>
+        <button onClick="divide()">Divide</button>
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    function add(){
+        let enterNum1 = document.getElementById("num1").value;
+        let enterNum2 = document.getElementById("num2").value;
+
+        let sum = Number(enterNum1) + Number(enterNum2);
+        alert(sum);
+        
+     }
+
+    function subtract(){
+        let enterNum1 = document.getElementById("num1").value;
+        let enterNum2 = document.getElementById("num2").value;
+
+        let subtract = Number(enterNum1) - Number(enterNum2);
+        alert(subtract);
+    }
+
+    function multiply(){
+        let enterNum1 = document.getElementById("num1").value;
+        let enterNum2 = document.getElementById("num2").value;
+
+        let multiply = Number(enterNum1) * Number(enterNum2);
+        alert(multiply);
+    }
+
+    function divide(){
+        let enterNum1 = document.getElementById("num1").value;
+        let enterNum2 = document.getElementById("num2").value;
+
+        let divide = Number(enterNum1) / Number(enterNum2);
+        alert(divide);
+    }
+    
+</script>
