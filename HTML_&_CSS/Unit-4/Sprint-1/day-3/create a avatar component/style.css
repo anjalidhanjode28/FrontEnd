@@ -1,0 +1,16 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .Btn {
+    background-color: tomato;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .Image {
+    border-radius: 50%;
+    border: 3px solid black;
+  }
+  
