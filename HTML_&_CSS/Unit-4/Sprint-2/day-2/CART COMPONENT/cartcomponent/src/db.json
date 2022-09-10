@@ -1,0 +1,22 @@
+{
+    "dishes" : [
+        {
+          "id": 1,
+          "name": "Biryani",
+          "price": 100,
+          "qty": 1
+        },
+        {
+          "id": 2,
+          "name": "Chips",
+          "price": 10,
+          "qty": 2
+        },
+        {
+          "id": 3,
+          "name": "Noodles",
+          "price": 50,
+          "qty": 5
+        }
+      ]
+} 
