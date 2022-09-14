@@ -1,0 +1,41 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+button {
+  background-color: inherit;
+  color: inherit;
+  font-size: 20px;
+  margin-left: 2%;
+  border-radius: 10px;
+  border: 2px solid brown;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Nav > div {
+  display: flex;
+  width: fit-content;
+}
+
+.Foot {
+  border: 2px solid brown;
+  margin: auto;
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Foot > div {
+  text-align: left;
+  padding: 1%;
+}
