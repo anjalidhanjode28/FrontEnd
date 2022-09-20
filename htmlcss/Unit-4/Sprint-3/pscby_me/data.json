@@ -1,0 +1,265 @@
+{
+  "posts": [
+    {
+      "brand": "Calvin Klein",
+      "rating": 4.3,
+      "name": "Calvin Klein Eternity For Men Eau De Parfum",
+      "price": 468.00,
+      "productID": 1,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/s/8/s8.jpg"
+    },
+    {
+      "brand": "Fogg",
+      "rating": 4.5,
+      "name": "Fogg Bleu Series Island Fragrance Body Spray",
+      "price": 255.00,
+      "productID": 2,
+      "catagory": "Body Spray",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo21.jpg"
+    },
+    {
+      "brand": "Fogg",
+      "rating": 3.8,
+      "name": "Fogg Force Fragrance Body Spray",
+      "price": 230.00,
+      "productID": 3,
+      "catagory": "Body Spray",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo20.jpg"
+    },
+    {
+      "brand": "Fogg",
+      "rating": 3.9,
+      "name": "Fogg Bleu Series Mountain Fragrance Body Spray",
+      "price": 450.00,
+      "productID": 4,
+      "catagory": "Body Spray",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo18.jpg"
+    },
+    {
+      "brand": "Engage",
+      "rating": 4.5,
+      "name": "Engage Yin Eau De Parfum For Men",
+      "price": 459.00,
+      "productID": 5,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/e/5/e55.jpg"
+    },
+    {
+      "brand": "Engage",
+      "rating": 5,
+      "name": "Engage Sport Cool Deodorant For Women, Citrus & Spicy, Skin Friendly",
+      "price": 318.00,
+      "productID": 6,
+      "catagory": "Deodorant",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e54.jpg"
+    },
+    {
+      "brand": "Fogg",
+      "rating": 4.8,
+      "name": "Fogg Scent Beautiful Secret Women Fragrance Body Spray",
+      "price": 567.00,
+      "productID": 7,
+      "catagory": "Body Spray",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/r/r/rr.jpg"
+    },
+    {
+      "brand": "Fogg",
+      "rating": 4.4,
+      "name": "Fogg Master Cedar Body Spray",
+      "price": 278.00,
+      "productID": 8,
+      "catagory": "Body Spray",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo13.jpg"
+    },
+    {
+      "brand": "Engage",
+      "rating": 4.3,
+      "name": "Engage Sport Fresh Deodorant For Women",
+      "price": 196.00,
+      "productID": 9,
+      "catagory": "Deodorant",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e52.jpg"
+    },
+    {
+      "brand": "Engage",
+      "rating": 4,
+      "name": "Engage Spell Deodorant For Women",
+      "price": 210.00,
+      "productID": 10,
+      "catagory": "Deodorant",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/5/e51.jpg"
+    },
+    {
+      "brand": "Engage",
+      "rating": 4.2,
+      "name": "Engage W1 Perfume Spray For Women",
+      "price": 225.00,
+      "productID": 11,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/e/4/e49.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 4.1,
+      "name": "Denver Esteem Hamilton Perfume",
+      "price": 448.00,
+      "productID": 12,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d37.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 4.2,
+      "name": "Denver Noble Hamilton Deodorant Body Spray",
+      "price": 210.00,
+      "productID": 13,
+      "catagory": "Body Spray",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d36.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 4.3,
+      "name": "Denver Imperial Deodorant For Men",
+      "price": 212.00,
+      "productID": 14,
+      "catagory": "Deodorant",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d35.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 4.6,
+      "name": "Denver Honour Hamilton Deo",
+      "price": 329.00,
+      "productID": 15,
+      "catagory": "Deodorant",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d33.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 5,
+      "name": "Denver SRK Emperor Deodorant Autograph Collection - 150ml",
+      "price": 345.00,
+      "productID": 16,
+      "catagory": "Deodorant",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d32.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 3.8,
+      "name": "Denver Sporting Club Goal Perfume - 60ml",
+      "price": 57.00,
+      "productID": 17,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d31.jpg"
+    },
+    {
+      "brand": "Denver",
+      "ratin": 4.4,
+      "name": "Denver Insight Eau De Perfume",
+      "price": 448.00,
+      "productID": 18,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d30.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 4.4,
+      "name": "Denver Sporting Club Rider Deo",
+      "price": "79.00",
+      "productID": 19,
+      "catagory": "Deodorant",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d29.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 4.4,
+      "name": "Denver Hamilton Caliber Perfume - 100ml",
+      "price": "67.00",
+      "productID": 20,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d28.jpg"
+    },
+    {
+      "brand": "Denver",
+      "rating": 4.9,
+      "name": "Denver Hamilton Imperial Perfume",
+      "price": 436.00,
+      "productID": 21,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d26.png"
+    },
+    {
+      "brand": "Denver",
+      "rating": 3.8,
+      "name": "Denver Black Code Perfume",
+      "price": 212.00,
+      "productID": 22,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d20.png"
+    },
+    {
+      "brand": "Denver",
+      "rating": 4.2,
+      "name": "Denver Hamilton Imperial Perfume - 100ml",
+      "price": 449.00,
+      "productID": 24,
+      "catagory": "Perfume",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/2/d24.jpg"
+    },
+    {
+      "brand": "Fogg",
+      "rating": 4.3,
+      "name": "Fogg Dynamic Fragrance Body Spray",
+      "price": 250.00,
+      "productID": 25,
+      "catagory": "Body Spray",
+      "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo7.jpg"
+    },
+    {
+        "brand": "Mamaearth",
+        "rating": 4,
+        "name": "Mamaearth Rice Face Scrub For Glowing Skin With Rice Water & Niacinamide For Glass Skin",
+        "price": 304.00 ,
+        "productID": 26,
+        "catagory": "Scrub",
+        "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/r/e/repair_shampoo_650-2_1_1.jpg"
+      },
+      {
+        "brand": "Lotus Herbals",
+        "rating": 3.8,
+        "name": "Lotus Herbals Whiteglow Vitamin C Radiance Cream Spf 20",
+        "price": "428.00",
+        "productID": 27,
+        "catagory": "Cream",
+        "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/i/m/image1_600x.jpg"
+      },
+      {
+        "brand": "Wow",
+        "rating": 3.6,
+        "name": "WOW Skin Science Caffeine Face Serum",
+        "price": 515.00,
+        "productID": 28,
+        "catagory": "Face serum",
+        "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/3/6/3699c478906105612174-2.jpg"
+      },
+      {
+        "brand": "Wow",
+        "rating": 4.3,
+        "name": "WOW Skin Science Activated Charcoal Face Scrub",
+        "price": 375.00,
+        "productID": 29,
+        "catagory": "Scrub",
+        "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/8/9/8904304651284_1.jpg"
+      },
+      {
+        "brand": "Wow",
+        "rating": 4.2,
+        "name": "WOW Skin Science Activated Charcoal Face Mask",
+        "price": 435.00,
+        "productID": 30,
+        "catagory": "Face Mask",
+        "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/a/c/activated_charcoal_face_mask2.jpg"
+      }
+  ]
+}
