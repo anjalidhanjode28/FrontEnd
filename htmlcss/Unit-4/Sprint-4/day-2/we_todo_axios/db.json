@@ -1,0 +1,54 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "DSA",
+      "status": false
+    },
+    {
+      "id": 2,
+      "title": "React.js",
+      "status": false
+    },
+    {
+      "id": 3,
+      "title": "Mongo DB",
+      "status": false
+    },
+    {
+      "id": 4,
+      "title": "Java",
+      "status": false
+    },
+    {
+      "title": "maths",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "Assignments",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "science",
+      "status": true,
+      "id": 7
+    },
+    {
+      "title": "contest",
+      "status": true,
+      "id": 8
+    },
+    {
+      "title": "physics",
+      "status": true,
+      "id": 9
+    },
+    {
+      "title": "Project",
+      "status": true,
+      "id": 10
+    }
+  ]
+}
