@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
+.App {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+table{
+  margin: 3%;
+  border-collapse: collapse;
+}
+
+td{
+  border: 1px solid green;
+}
+
+.form-wrapper{
+  margin: auto;
+  padding: 3%;
+  width: 70%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form > div {
+  margin: auto;
+  margin-bottom: 2%;
+  width: 80%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+}
+
+form > div > div {
+  display: flex;
+  line-height: 35px;
+}
+
+input{
+  padding: 0px 28px;
+}
+
+button{
+  padding: 1% 3%;
+  font-size: large;
+}
