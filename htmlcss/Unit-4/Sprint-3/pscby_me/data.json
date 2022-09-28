@@ -15,7 +15,7 @@
       "name": "Fogg Bleu Series Island Fragrance Body Spray",
       "price": 255.00,
       "productID": 2,
-      "catagory": "Body Spray",
+      "catagory": "Body-Spray",
       "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo21.jpg"
     },
     {
@@ -24,7 +24,7 @@
       "name": "Fogg Force Fragrance Body Spray",
       "price": 230.00,
       "productID": 3,
-      "catagory": "Body Spray",
+      "catagory": "Body-Spray",
       "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo20.jpg"
     },
     {
@@ -33,7 +33,7 @@
       "name": "Fogg Bleu Series Mountain Fragrance Body Spray",
       "price": 450.00,
       "productID": 4,
-      "catagory": "Body Spray",
+      "catagory": "Body-Spray",
       "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo18.jpg"
     },
     {
@@ -60,7 +60,7 @@
       "name": "Fogg Scent Beautiful Secret Women Fragrance Body Spray",
       "price": 567.00,
       "productID": 7,
-      "catagory": "Body Spray",
+      "catagory": "Body-Spray",
       "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/r/r/rr.jpg"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Fogg Master Cedar Body Spray",
       "price": 278.00,
       "productID": 8,
-      "catagory": "Body Spray",
+      "catagory": "Body-Spray",
       "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo13.jpg"
     },
     {
@@ -114,7 +114,7 @@
       "name": "Denver Noble Hamilton Deodorant Body Spray",
       "price": 210.00,
       "productID": 13,
-      "catagory": "Body Spray",
+      "catagory": "Body-Spray",
       "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/d/3/d36.jpg"
     },
     {
@@ -213,7 +213,7 @@
       "name": "Fogg Dynamic Fragrance Body Spray",
       "price": 250.00,
       "productID": 25,
-      "catagory": "Body Spray",
+      "catagory": "Body-Spray",
       "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/f/o/fo7.jpg"
     },
     {
@@ -258,7 +258,7 @@
         "name": "WOW Skin Science Activated Charcoal Face Mask",
         "price": 435.00,
         "productID": 30,
-        "catagory": "Face Mask",
+        "catagory": "Face-Mask",
         "img": "https://www.beautybebo.com/pub/media/catalog/product/cache/9afc37bdf46fae888adf23d57cf627ad/a/c/activated_charcoal_face_mask2.jpg"
       }
   ]
