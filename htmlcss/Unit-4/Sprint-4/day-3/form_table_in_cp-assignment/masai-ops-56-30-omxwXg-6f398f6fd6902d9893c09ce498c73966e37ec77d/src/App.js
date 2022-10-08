@@ -19,6 +19,7 @@ function App() {
     const inputValue = type === "checkbox" ? checked : value ;
     setFormData({...formData, [name]: inputValue});
     e.target.value = null;
+    console.log(e.target.value);
   };
 
   const handleSubmit = (e) => {
@@ -145,3 +146,11 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
