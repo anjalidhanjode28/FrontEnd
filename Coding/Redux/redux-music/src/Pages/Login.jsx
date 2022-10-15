@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {login} from "../Redux/AuthReducer/action";
 import {USER_LOGIN_SUCCESS} from "../Redux/AuthReducer/actionTypes";
 
@@ -9,6 +9,8 @@ const Login = () => {
     const dispatch = useDispatch();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -16,7 +18,9 @@ const Login = () => {
             dispatch(login({email,password}))
             .then((r) => {
                 if(r.type === USER_LOGIN_SUCCESS){
-                    <Navigate to="/"/>
+                    const comingFrom = location.state.from || "/";
+                    // <Navigate to="/"/>
+                    navigate(comingFrom,{replace: true});
                 }
                 console.log("After successful login",r);
             })

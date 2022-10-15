@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import MusicRecords from "./MusicRecords";
 import {SingleMusicRecord} from "./SingleMusicRecord";
-import {EditMusicRecord} from "./EditMusicRecord";
+import EditMusicRecord from "./EditMusicRecord";
 import Login from "./Login";
 import ReqAuth from "./ReqAuth";
 

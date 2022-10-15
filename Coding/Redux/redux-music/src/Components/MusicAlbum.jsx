@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useSearchParams } from "react-router-dom";
-import getMusicRecord from "../Redux/AppReducer/action";
+import {getMusicRecord} from "../Redux/AppReducer/action";
 import { Link } from "react-router-dom";
 
 const MusicAlbum = () => {

@@ -40,4 +40,9 @@ const login = (payload) => (dispatch) => {
         });
 };
 
-export {login, postLoginRequest, postLoginSuccess, postLoginFailure};
+export {
+    login, 
+    postLoginRequest, 
+    postLoginSuccess, 
+    postLoginFailure
+};

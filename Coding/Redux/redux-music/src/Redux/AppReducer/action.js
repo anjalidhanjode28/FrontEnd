@@ -36,4 +36,19 @@ const getMusicRecord = (queryParams) => (dispatch) => {
         });
 };
 
-export default getMusicRecord;
+
+const updateMusicRecord = (id,payload) => (dispatch) => {
+
+    dispatch({type: types.UPDATE_MUSIC_RECORD_REQUEST});
+
+    return axios
+        .patch(`http://localhost:8088/albums/${id}`, payload)
+        .then((res) => {
+            dispatch({type: types.UPDATE_MUSIC_RECORD_SUCCESS});
+        })
+        .catch((err) => {
+            dispatch({type: types.UPDATE_MUSIC_RECORD_FAILURE});
+        });
+};
+
+export {getMusicRecord, updateMusicRecord};

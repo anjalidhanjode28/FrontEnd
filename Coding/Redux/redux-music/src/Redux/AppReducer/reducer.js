@@ -15,6 +15,7 @@ const reducer = (oldState = initialState, action) => {
                 ...oldState,
                 isLoading: true,
             };
+
         case types.GET_MUSIC_RECORD_SUCCESS:
             return {
                 ...oldState,
@@ -22,12 +23,14 @@ const reducer = (oldState = initialState, action) => {
                 isError: false,
                 musicRecords: payload,
             };
+
         case types.GET_MUSIC_RECORD_FAILURE:
             return {
                 ...oldState,
                 isLoading: false,
                 isError: true,
             };
+            
         default:
             return oldState;
     }

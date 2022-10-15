@@ -16,6 +16,7 @@ const reducer = (oldState = initialState, action) => {
                 ...oldState,
                 isAuthLoading: true,
             };
+            
         case types.USER_LOGIN_SUCCESS:
             return {
                 ...oldState,
@@ -23,6 +24,7 @@ const reducer = (oldState = initialState, action) => {
                 isAuthLoading: false,
                 token: payload,
             };
+
         case types.USER_LOGIN_FAILURE:
             return {
                 ...oldState,
@@ -31,6 +33,7 @@ const reducer = (oldState = initialState, action) => {
                 token: "",
                 isAuthError: true,
             };
+
         default:
             return oldState;
     };

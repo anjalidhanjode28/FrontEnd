@@ -3,6 +3,7 @@ import styled from "styled-components";
 import FilterSort from "../Components/FilterSort";
 import MusicAlbum from "../Components/MusicAlbum";
 
+
 const MusicRecords = () => {
     return (
         <Wrapper color="red">
