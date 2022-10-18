@@ -1,6 +1,8 @@
 import React from "react";
-import { FaBars, FaHome, FaUser, FaIdCard, FaFolder, FaLinkedinIn,  FaGithubAlt, FaList, FaBook } from "react-icons/fa";
+import {  FaHome, FaUser, FaIdCard, FaFolder, FaLinkedinIn,  FaGithubAlt, FaList, FaBook } from "react-icons/fa";
 import Typical from "react-typical";
+import Image from "../Image/lokesh.jpg";
+import { Link } from "@chakra-ui/react";
 
 function MainPage() {
   return (
