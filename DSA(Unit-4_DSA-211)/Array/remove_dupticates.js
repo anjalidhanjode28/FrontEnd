@@ -33,6 +33,31 @@ function removeDuplicates(n,arr){
     
     console.log(count+1);
     console.log(bag);
+
+
+    // another method:--
+
+    
+    // let bag = "";
+    // let count = 0;
+    // let obj = {};
+    
+    // for(let i=0; i<n; i++){
+    //     if(obj[arr[i]] === undefined){
+    //         obj[arr[i]] = 1;
+    //     }else{
+    //         obj[arr[i]] = obj[arr[i]] + 1;
+    //     }
+    // }
+    
+    // for(let key in obj){
+    //     count++;
+    //     bag += key+" ";
+    // }
+    
+    // console.log(count);
+    // console.log(bag);
+    
 }
 
 function runProgram(input){
