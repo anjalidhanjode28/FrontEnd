@@ -48,7 +48,7 @@ const Navbar = () => {
             <a href="#Projects"><FaFolder /> Projects</a>
           </div>
           <div>
-            <FaIdCard /> Contact
+            <a href="#contactSection"><FaIdCard /> Contact</a>
           </div>
           <div>
             <a
@@ -78,7 +78,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div id="menu-class" className={menu_class}>
+        <div id="menu-class" style={{height: "100vh"}} className={menu_class}>
           
           <div className="navinside">
             <div onClick={updateMenu}>
@@ -102,7 +102,7 @@ const Navbar = () => {
               </a>
             </div>
             <div onClick={updateMenu}>
-              <a href="">
+              <a href="#contactSection">
                 <FaIdCard /> Contact
               </a>
             </div>

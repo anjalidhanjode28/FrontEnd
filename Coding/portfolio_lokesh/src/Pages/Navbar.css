@@ -36,6 +36,7 @@
 
 .nav > div{
     border: 0.5px solid black;
+    cursor: pointer;
     background-color: white;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
     border-radius: 10px;
@@ -47,6 +48,13 @@
     font-size: 15px;
     font-weight: bold;
 }
+
+.nav > div:hover{
+    transform: scale(1.04);
+    transition: 0.5s ease-out;
+    border: 1px solid rgb(224, 3, 3);
+    background-color: rgb(162, 203, 210);
+  }
 
 .nav > div > a {
     text-decoration: none;
@@ -109,8 +117,10 @@
         z-index: 10;
         display: flex;
         width: 100%;
+        top: -1px;
         padding-bottom: -200px;
         margin-bottom: -380px;
+        position: fixed;
     }
    
     .burgerNav{

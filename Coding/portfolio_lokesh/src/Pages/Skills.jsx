@@ -4,7 +4,8 @@ import { FaCss3, FaGitAlt, FaHtml5, FaJsSquare, FaReact } from "react-icons/fa";
 
 export const Skills = () => {
   return (
-    <div id="skills" className="skillContainer">
+    <div id="skills">
+    <div className="skillContainer">
       <div><h1>Skills</h1></div>
       <div className="skillsBox">
         <div>
@@ -76,6 +77,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

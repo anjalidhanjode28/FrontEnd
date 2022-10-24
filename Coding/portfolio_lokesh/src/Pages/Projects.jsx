@@ -8,7 +8,8 @@ import naukari from "../Image/naukari.png";
 
 export const Projects = () => {
   return (
-    <div id="Projects" className="projectsContainer">
+    <div id="Projects">
+    <div className="projectsContainer">
       <div>
         <div className="projectheading">
           <h1>Projects</h1>
@@ -70,14 +71,14 @@ export const Projects = () => {
                 <div className="btn">
                   <button>
                     <h3>
-                      <a href="https://github.com/lokesh-patidar/rightful-order-9279" target="blank">
+                      <a href="https://github.com/lokesh-patidar/rightful-order-9279" target="_blank">
                         <FaGithub /> GitHub Repo
                       </a>
                     </h3>
                   </button>
                   <button>
                     <h3>
-                      <a href="https://fascinating-youtiao-fd95ce.netlify.app/" target="blank">
+                      <a href="https://fascinating-youtiao-fd95ce.netlify.app/" target="_blank">
                         <FaLink /> Diployed Link
                       </a>
                     </h3>
@@ -149,7 +150,7 @@ export const Projects = () => {
                     <h3>
                       <a
                         href="https://github.com/lokesh-patidar/Dice-App"
-                        target="blank"
+                        target="_blank"
                       >
                         <FaGithub /> GitHub Repo
                       </a>
@@ -159,7 +160,7 @@ export const Projects = () => {
                     <h3>
                       <a
                         href="https://whimsical-sorbet-723292.netlify.app/"
-                        target="blank"
+                        target="_blank"
                       >
                         <FaLink /> Diployed Link
                       </a>
@@ -234,7 +235,7 @@ export const Projects = () => {
                     <h3>
                       <a
                         href="https://github.com/lokesh-patidar/vigorous-ticket-1895"
-                        target="blank"
+                        target="_blank"
                       >
                         <FaGithub /> GitHub Repo
                       </a>
@@ -244,7 +245,7 @@ export const Projects = () => {
                     <h3>
                       <a
                         href="https://monumental-sprinkles-d71af9.netlify.app/"
-                        target="blank"
+                        target="_blank"
                       >
                         <FaLink /> Diployed Link
                       </a>
@@ -338,7 +339,7 @@ export const Projects = () => {
                     <h3>
                       <a
                         href="https://github.com/lokesh-patidar/punchy-car-5123/tree/main/naukri.com"
-                        target="blank"
+                        target="_blank"
                       >
                         <FaGithub /> GitHub Repo
                       </a>
@@ -348,7 +349,7 @@ export const Projects = () => {
                     <h3>
                       <a
                         href="https://ornate-flan-0416fa.netlify.app/"
-                        target="blank"
+                        target="_blank"
                       >
                         <FaLink /> Diployed Link
                       </a>
@@ -429,14 +430,14 @@ export const Projects = () => {
                 <div className="btn">
                   <button>
                     <h3>
-                      <a href="#">
+                      <a href="#" target="_blank">
                         <FaGithub /> GitHub Repo
                       </a>
                     </h3>
                   </button>
                   <button>
                     <h3>
-                      <a href="#">
+                      <a href="#" target="_blank">
                         <FaLink /> Diployed Link
                       </a>
                     </h3>
@@ -447,6 +448,7 @@ export const Projects = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

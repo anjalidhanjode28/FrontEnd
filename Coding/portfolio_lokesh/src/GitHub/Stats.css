@@ -1,18 +1,20 @@
 .statsBox{
     display: block;
     text-align: center;
+    background-color: rgb(247, 247, 210);
+    padding-top: 5%;
 }
 
 .statsBox > h3{
     font-size: 20px;
     border: 3px solid black;
-    width: 35%;
+    width: 15%;
     margin: auto;
     border-radius: 7px;
     background-color: brown;
     color: white;
     margin-bottom: 1%;
-    padding: 1%;
+    padding: 4px;
 }
 
 .statsContainer{
@@ -23,29 +25,48 @@
 }
 
 @media all and (min-width: 481px) and (max-width: 768px){
-    .calendarContainer{
+
+    .statsContainer{
         display: flex;
+        width: 90%;
+        margin: auto;
         justify-content: center;
-        flex-direction: column;
-        padding: 5%;
     }
-    
-    .calendarContainer .calendarBox{
+
+    .statsContainer > div a img{
+        width: 100%;
         margin: auto;
     }
     
-        
-    .calendarContainer .calendarBox > h3{
-        border-radius: 7px;
-        font-size: 17px;
-        margin-top: 7%;
-        margin-bottom: 6%;
+    .statsBox > h3{
+        font-size: 15px;
+        margin-bottom: 5%;
+        background-color: white;
+        color: rgb(54, 3, 3);
+        border: 1px solid rgb(22, 4, 61);
     }
     
-    .Calendar{
-        height: 300px;
-    }
 }
 
 
-@media all and (min-width: 320px) and (max-width: 480px){}
+@media all and (min-width: 320px) and (max-width: 480px){
+    .statsContainer{
+        display: block;
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .statsContainer > div a img{
+        width: 100%;
+    }
+    
+    .statsBox > h3{
+        font-size: 13px;
+        margin-bottom: 5%;
+        width: 20%;
+        background-color: white;
+        color: rgb(54, 3, 3);
+        border: 1px solid rgb(22, 4, 61);
+    }
+}

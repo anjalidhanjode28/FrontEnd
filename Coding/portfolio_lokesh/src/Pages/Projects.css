@@ -3,6 +3,7 @@
     width: 100%;
     height: auto;
     padding-top: 6%;
+    padding-bottom: 7%;
 }
 
 .projectheading{
@@ -24,7 +25,6 @@
 
 
 .projectBox{
-    /* border: 1px solid red; */
     padding: 5%;
 }
 
@@ -234,6 +234,11 @@
 }
 
 @media all and (min-width: 320px) and (max-width: 480px){
+
+    #Projects{
+        padding-top: 15%;
+    }
+
     .projectDetails{
         width: 100%;
         display: block;
@@ -242,7 +247,7 @@
     }
 
     .projectsContainer .projectheading h1{
-        font-size: 30px;
+        font-size: 35px;
         width: 110px;
     }
 
