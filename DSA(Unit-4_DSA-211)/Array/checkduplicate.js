@@ -9,6 +9,8 @@
 // 3
 // 1 2 3
 
+
+// first method
 function checkDuplicate(n,arr){
     
     let flag=false;
@@ -27,6 +29,23 @@ function checkDuplicate(n,arr){
     }else{
         console.log("NO");
     }
+}
+
+// second method
+function checkduplicate(n,arr){
+    
+    arr.sort(function(a,b){
+        return a-b;
+    });
+    
+    for(let i=0; i<n-1; i++){
+        if(arr[i] === arr[i+1]){
+            console.log("YES");
+            return;
+        }
+    }
+    
+    console.log("NO");
 }
 
 function runProgram(input){
