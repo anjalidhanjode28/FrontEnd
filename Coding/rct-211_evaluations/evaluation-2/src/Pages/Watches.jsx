@@ -1,12 +1,58 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Filter from "../Components/Filter";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
+import { getWatches } from "../Redux/AppReducer/action";
+import WatchCard from "../Components/WatchCard";
 
 const Watches = () => {
+
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const watchData = useSelector();
+  const [searchParams] = useSearchParams();
+
+  useEffect(()=>{
+    let getWatchParams;
+    if(location.search || watchData.length === 0){
+      getWatchParams={
+        params: {
+          category: searchParams.getAll('category'),
+        },
+      };
+    }
+    dispatch(getWatches(getWatchParams))
+  }, [location.search, dispatch, watchData.length, searchParams])
+
+
   return (
-    <div>
+    <div data-testid="watches" style={{ display: "flex"}}>
       <Filter />
-      <div>
-        {/* Map through the watch list here using WatchCard Component */}
+      <div 
+        data-testid="watches-wrapper"
+        style={{
+          width: "100%",
+          display: "grid",
+          gap: "10px",
+          gridAutoColumns: "repeat(auto-fit, minmax(310px, max-content))",
+          justifyContent: 'center',
+        }}
+        >
+        {/* Map through the watch list here using WatchCard Component */
+         watchData.length > 0 && 
+         watchData.map((watch) => {
+          return (
+            <div key={watch.id} style={{width: "310px"}}>
+              <Link 
+                to={`/watches/${watch.id}`}
+                style={{textDecoration: "none", color: "black"}}
+              >
+                 <WatchCard {...watch}/>
+              </Link>
+            </div>
+          );
+         })
+        }
       </div>
     </div>
   );
