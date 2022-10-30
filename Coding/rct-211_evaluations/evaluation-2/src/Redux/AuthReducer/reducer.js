@@ -12,7 +12,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   const {type, payload} = action;
   switch(type){
-    case types.LOGIN_REQUEST
+    case types.LOGIN_REQUEST:
       return {
         ...state,
         isLoading: true,
@@ -21,8 +21,8 @@ const reducer = (state = initialState, action) => {
     case types.LOGIN_SUCCESS:
       return {
         ...state,
-        token: payload,
         isAuth: true,
+        token: payload,
         isLoading: false,
         isError: false,
       };

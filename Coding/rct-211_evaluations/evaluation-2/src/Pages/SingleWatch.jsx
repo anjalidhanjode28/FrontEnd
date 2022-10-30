@@ -1,14 +1,14 @@
 import React from "react";
 
-const SingleWatch = () => {
+const SingleWatch = ({id,image,category}) => {
   return (
     <div>
       <h2>Watch name</h2>
       <div>
-        <img src="watch-image" alt="Cover Pic" />
+        <img src={image} alt="Cover Pic" />
       </div>
       <div>
-        <div>Watch Category</div>
+        <div>{category}</div>
       </div>
     </div>
   );

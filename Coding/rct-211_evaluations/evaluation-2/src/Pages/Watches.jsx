@@ -9,20 +9,21 @@ const Watches = () => {
 
   const dispatch = useDispatch();
   const location = useLocation();
-  const watchData = useSelector();
+  const watchData = useSelector((state) => state.AppReducer.watches);
   const [searchParams] = useSearchParams();
 
+console.log(watchData);
   useEffect(()=>{
     let getWatchParams;
     if(location.search || watchData.length === 0){
-      getWatchParams={
+      getWatchParams = {
         params: {
           category: searchParams.getAll('category'),
         },
       };
     }
     dispatch(getWatches(getWatchParams))
-  }, [location.search, dispatch, watchData.length, searchParams])
+  }, [location.search, dispatch, watchData.length, searchParams]);
 
 
   return (
@@ -33,8 +34,8 @@ const Watches = () => {
         style={{
           width: "100%",
           display: "grid",
-          gap: "10px",
-          gridAutoColumns: "repeat(auto-fit, minmax(310px, max-content))",
+          gap: "5px",
+          gridAutoColumns: "repeat(3, 1fr)",
           justifyContent: 'center',
         }}
         >
@@ -50,9 +51,10 @@ const Watches = () => {
                  <WatchCard {...watch}/>
               </Link>
             </div>
+            
           );
-         })
-        }
+         })}
+         
       </div>
     </div>
   );

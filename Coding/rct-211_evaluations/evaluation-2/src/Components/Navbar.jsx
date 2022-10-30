@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const isAuth = useSelector((state) => state.AuthReducer.isAuth);
+
   return (
     <div 
       data-testid="navbar"
@@ -20,7 +22,6 @@ const Navbar = () => {
         />
       </div>
 
-      <div>
         {/* Link button to /login page, if the user is not authenticated, else don't show it*/
         !isAuth && (
           <div>
@@ -43,7 +44,6 @@ const Navbar = () => {
               </button>
           </div>
         )}
-      </div>
     </div>
   );
 };

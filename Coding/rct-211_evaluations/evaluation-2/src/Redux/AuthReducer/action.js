@@ -15,4 +15,4 @@ const login = (payload) => (dispatch) => {
     .catch((err) => dispatch({type: types.LOGIN_FAILURE, payload: err}))
 };
 
-export {login};
+export { login };

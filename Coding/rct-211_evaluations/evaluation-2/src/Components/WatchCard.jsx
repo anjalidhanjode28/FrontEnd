@@ -1,14 +1,39 @@
 import React from "react";
 
-const WatchCard = ({ id }) => {
+const WatchCard = ({ id,name,category,image }) => {
   return (
-    <div data-testid={`watch-card-wrapper-${id}`}>
-      <div>
-        <img data-testid="watch-card-image" src="" alt="" />
+    <div 
+      data-testid={`watch-card-wrapper-${id}`}
+      style={{
+        display: 'block',
+        width: '300px',
+        height: '390px',
+        border: '2px solid black',
+        borderRadius: '5px',
+      }}
+      >
+      <div 
+        style={{
+          display: 'flex',
+          height: '300px',
+          padding: '20px 20px 0 20px',
+          flexDirection: 'column',
+          justifyContent: 'center',
+        }}>
+        <img 
+          data-testid="watch-card-image" 
+          src={image} 
+          alt="watch" 
+          style={{
+            backgroundSize: 'contain',
+            width: '100%',
+            maxHeight: '100%',
+          }}
+        />
       </div>
-      <div>
-        <div data-testid="watch-name">name</div>
-        <div data-testid="watch-category">category</div>
+      <div style={{ textAlign: 'center' }}>
+        <div data-testid="watch-name" style={{ fontSize: '24px' }}>{name}</div>
+        <div data-testid="watch-category">{category}</div>
       </div>
     </div>
   );
